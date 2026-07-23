@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "name": "Software"
+  },
+  {
+    "id": 2,
+    "name": "Gaming"
+  },
+  {
+    "id": 3,
+    "name": "Healthcare"
+  },
+  {
+    "id": 4,
+    "name": "Finance"
+  },
+  {
+    "id": 5,
+    "name": "Retail"
+  },
+  {
+    "id": 6,
+    "name": "Manufacturing"
+  },
+  {
+    "id": 7,
+    "name": "E-learning"
+  },
+  {
+    "id": 8,
+    "name": "Legal"
+  },
+  {
+    "id": 9,
+    "name": "Travel"
+  },
+  {
+    "id": 10,
+    "name": "Media & Entertainment"
+  }
+]

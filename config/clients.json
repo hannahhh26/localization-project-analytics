@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "name": "Microsoft",
+    "industry": "Software",
+    "annual_project_target": 320,
+    "locales": [
+      "French",
+      "German",
+      "Spanish",
+      "Japanese",
+      "Chinese (Simplified)"
+    ],
+    "project_types": [
+      "UI",
+      "Documentation",
+      "Marketing",
+      "Training"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Nintendo",
+    "industry": "Gaming",
+    "annual_project_target": 260,
+    "locales": [
+      "English",
+      "Japanese",
+      "French",
+      "German",
+      "Spanish"
+    ],
+    "project_types": [
+      "UI",
+      "Marketing",
+      "Subtitles"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "IKEA",
+    "industry": "Retail",
+    "annual_project_target": 210,
+    "locales": [
+      "French",
+      "German",
+      "Spanish",
+      "Italian",
+      "Dutch",
+      "Polish"
+    ],
+    "project_types": [
+      "Marketing",
+      "Documentation",
+      "Training"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "HSBC",
+    "industry": "Finance",
+    "annual_project_target": 180,
+    "locales": [
+      "French",
+      "German",
+      "Chinese (Simplified)"
+    ],
+    "project_types": [
+      "Documentation",
+      "Legal",
+      "Training"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Netflix",
+    "industry": "Media & Entertainment",
+    "annual_project_target": 240,
+    "locales": [
+      "French",
+      "German",
+      "Spanish",
+      "Japanese",
+      "Korean"
+    ],
+    "project_types": [
+      "Marketing",
+      "Subtitles",
+      "UI"
+    ]
+  }
+]

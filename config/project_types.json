@@ -1,0 +1,80 @@
+[
+  {
+    "id": 1,
+    "name": "UI",
+    "word_count": {
+      "min": 300,
+      "max": 3000
+    },
+    "qa_required": true,
+    "typical_duration_days": {
+      "min": 2,
+      "max": 7
+    }
+  },
+  {
+    "id": 2,
+    "name": "Documentation",
+    "word_count": {
+      "min": 10000,
+      "max": 50000
+    },
+    "qa_required": false,
+    "typical_duration_days": {
+      "min": 10,
+      "max": 25
+    }
+  },
+  {
+    "id": 3,
+    "name": "Marketing",
+    "word_count": {
+      "min": 1000,
+      "max": 12000
+    },
+    "qa_required": true,
+    "typical_duration_days": {
+      "min": 3,
+      "max": 10
+    }
+  },
+  {
+    "id": 4,
+    "name": "Legal",
+    "word_count": {
+      "min": 5000,
+      "max": 30000
+    },
+    "qa_required": true,
+    "typical_duration_days": {
+      "min": 7,
+      "max": 20
+    }
+  },
+  {
+    "id": 5,
+    "name": "Training",
+    "word_count": {
+      "min": 3000,
+      "max": 20000
+    },
+    "qa_required": true,
+    "typical_duration_days": {
+      "min": 5,
+      "max": 15
+    }
+  },
+  {
+    "id": 6,
+    "name": "Subtitles",
+    "word_count": {
+      "min": 200,
+      "max": 5000
+    },
+    "qa_required": false,
+    "typical_duration_days": {
+      "min": 1,
+      "max": 5
+    }
+  }
+]
