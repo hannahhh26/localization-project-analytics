@@ -4,88 +4,239 @@
     "name": "Microsoft",
     "industry": "Software",
     "annual_project_target": 320,
-    "locales": [
-      "fr-FR",
-      "de-DE",
-      "es-ES",
-      "ja-JP",
-      "zh-CN"
-    ],
-    "project_types": [
-      "UI",
-      "Documentation",
-      "Marketing",
-      "Training"
-    ]
+    "locales": ["fr-FR", "de-DE", "es-ES", "ja-JP", "zh-CN"],
+    "project_types": ["UI", "Documentation", "Marketing", "Training"]
   },
   {
     "id": 2,
     "name": "Nintendo",
     "industry": "Gaming",
     "annual_project_target": 260,
-    "locales": [
-      "ja-JP",
-      "fr-FR",
-      "de-DE",
-      "es-ES"
-    ],
-    "project_types": [
-      "UI",
-      "Marketing",
-      "Subtitles"
-    ]
+    "locales": ["ja-JP", "fr-FR", "de-DE", "es-ES"],
+    "project_types": ["UI", "Marketing", "Subtitles"]
   },
   {
     "id": 3,
     "name": "IKEA",
     "industry": "Retail",
     "annual_project_target": 210,
-    "locales": [
-      "fr-FR",
-      "de-DE",
-      "es-ES",
-      "it-IT",
-      "nl-NL",
-      "pl-PL"
-    ],
-    "project_types": [
-      "Marketing",
-      "Documentation",
-      "Training"
-    ]
+    "locales": ["fr-FR", "de-DE", "es-ES", "it-IT", "nl-NL", "pl-PL"],
+    "project_types": ["Marketing", "Documentation", "Training"]
   },
   {
     "id": 4,
     "name": "HSBC",
     "industry": "Finance",
     "annual_project_target": 180,
-    "locales": [
-      "fr-FR",
-      "de-DE",
-      "zh-CN"
-    ],
-    "project_types": [
-      "Documentation",
-      "Legal",
-      "Training"
-    ]
+    "locales": ["fr-FR", "de-DE", "zh-CN"],
+    "project_types": ["Documentation", "Legal", "Training"]
   },
   {
     "id": 5,
     "name": "Netflix",
     "industry": "Media & Entertainment",
     "annual_project_target": 240,
-    "locales": [
-      "fr-FR",
-      "de-DE",
-      "es-ES",
-      "ja-JP",
-      "ko-KR"
-    ],
-    "project_types": [
-      "Marketing",
-      "Subtitles",
-      "UI"
-    ]
+    "locales": ["fr-FR", "de-DE", "es-ES", "ja-JP", "ko-KR"],
+    "project_types": ["Marketing", "Subtitles", "UI"]
+  },
+  {
+    "id": 6,
+    "name": "Adobe",
+    "industry": "Software",
+    "annual_project_target": 220,
+    "locales": ["fr-FR", "de-DE", "ja-JP", "zh-CN", "ko-KR"],
+    "project_types": ["UI", "Documentation", "Marketing"]
+  },
+  {
+    "id": 7,
+    "name": "Salesforce",
+    "industry": "Software",
+    "annual_project_target": 280,
+    "locales": ["fr-FR", "de-DE", "es-ES", "it-IT", "ja-JP"],
+    "project_types": ["UI", "Documentation", "Training"]
+  },
+  {
+    "id": 8,
+    "name": "Sony Interactive",
+    "industry": "Gaming",
+    "annual_project_target": 200,
+    "locales": ["ja-JP", "en-GB", "fr-FR", "de-DE", "es-ES"],
+    "project_types": ["UI", "Subtitles", "Marketing"]
+  },
+  {
+    "id": 9,
+    "name": "Pfizer",
+    "industry": "Healthcare",
+    "annual_project_target": 150,
+    "locales": ["fr-FR", "de-DE", "es-ES", "ja-JP"],
+    "project_types": ["Legal", "Documentation", "Training"]
+  },
+  {
+    "id": 10,
+    "name": "Roche",
+    "industry": "Healthcare",
+    "annual_project_target": 120,
+    "locales": ["de-DE", "fr-FR", "it-IT", "es-ES"],
+    "project_types": ["Documentation", "Training"]
+  },
+  {
+    "id": 11,
+    "name": "Spotify",
+    "industry": "Media & Entertainment",
+    "annual_project_target": 170,
+    "locales": ["fr-FR", "de-DE", "es-ES", "ja-JP", "ko-KR"],
+    "project_types": ["UI", "Marketing", "Subtitles"]
+  },
+  {
+    "id": 12,
+    "name": "Uber",
+    "industry": "Software",
+    "annual_project_target": 230,
+    "locales": ["fr-FR", "de-DE", "es-ES", "pt-BR", "ja-JP"],
+    "project_types": ["UI", "Documentation", "Marketing"]
+  },
+  {
+    "id": 13,
+    "name": "Coca-Cola",
+    "industry": "Retail",
+    "annual_project_target": 150,
+    "locales": ["fr-FR", "de-DE", "es-ES", "it-IT", "pt-BR"],
+    "project_types": ["Marketing", "Training"]
+  },
+  {
+    "id": 14,
+    "name": "Nike",
+    "industry": "Retail",
+    "annual_project_target": 130,
+    "locales": ["fr-FR", "de-DE", "es-ES", "ja-JP"],
+    "project_types": ["Marketing", "UI"]
+  },
+  {
+    "id": 15,
+    "name": "Airbnb",
+    "industry": "Travel",
+    "annual_project_target": 190,
+    "locales": ["fr-FR", "de-DE", "es-ES", "it-IT", "ja-JP"],
+    "project_types": ["UI", "Marketing", "Documentation"]
+  },
+  {
+    "id": 16,
+    "name": "Oracle",
+    "industry": "Software",
+    "annual_project_target": 200,
+    "locales": ["fr-FR", "de-DE", "ja-JP", "zh-CN"],
+    "project_types": ["Documentation", "UI", "Training"]
+  },
+  {
+    "id": 17,
+    "name": "SAP",
+    "industry": "Software",
+    "annual_project_target": 250,
+    "locales": ["de-DE", "fr-FR", "es-ES", "ja-JP"],
+    "project_types": ["Documentation", "Training", "UI"]
+  },
+  {
+    "id": 18,
+    "name": "Lego",
+    "industry": "Gaming",
+    "annual_project_target": 130,
+    "locales": ["da-DK", "de-DE", "fr-FR", "es-ES"],
+    "project_types": ["Marketing", "UI", "Subtitles"]
+  },
+  {
+    "id": 19,
+    "name": "Toyota",
+    "industry": "Manufacturing",
+    "annual_project_target": 170,
+    "locales": ["ja-JP", "en-US", "de-DE", "fr-FR"],
+    "project_types": ["Documentation", "Training"]
+  },
+  {
+    "id": 20,
+    "name": "Siemens",
+    "industry": "Manufacturing",
+    "annual_project_target": 160,
+    "locales": ["de-DE", "fr-FR", "es-ES", "zh-CN"],
+    "project_types": ["Documentation", "Legal", "Training"]
+  },
+  {
+    "id": 21,
+    "name": "Coursera",
+    "industry": "E-learning",
+    "annual_project_target": 140,
+    "locales": ["fr-FR", "de-DE", "es-ES", "ja-JP"],
+    "project_types": ["UI", "Subtitles", "Documentation"]
+  },
+  {
+    "id": 22,
+    "name": "Duolingo",
+    "industry": "E-learning",
+    "annual_project_target": 120,
+    "locales": ["fr-FR", "de-DE", "es-ES", "ja-JP", "ko-KR"],
+    "project_types": ["UI", "Marketing", "Documentation"]
+  },
+  {
+    "id": 23,
+    "name": "Barclays",
+    "industry": "Finance",
+    "annual_project_target": 110,
+    "locales": ["en-GB", "fr-FR", "de-DE"],
+    "project_types": ["Legal", "Documentation"]
+  },
+  {
+    "id": 24,
+    "name": "JPMorgan",
+    "industry": "Finance",
+    "annual_project_target": 140,
+    "locales": ["en-US", "fr-FR", "de-DE", "ja-JP"],
+    "project_types": ["Legal", "Training", "Documentation"]
+  },
+  {
+    "id": 25,
+    "name": "Booking.com",
+    "industry": "Travel",
+    "annual_project_target": 180,
+    "locales": ["nl-NL", "fr-FR", "de-DE", "es-ES", "it-IT"],
+    "project_types": ["UI", "Marketing"]
+  },
+  {
+    "id": 26,
+    "name": "Baker McKenzie",
+    "industry": "Legal",
+    "annual_project_target": 90,
+    "locales": ["en-US", "fr-FR", "de-DE", "es-ES"],
+    "project_types": ["Legal", "Documentation"]
+  },
+  {
+    "id": 27,
+    "name": "DLA Piper",
+    "industry": "Legal",
+    "annual_project_target": 80,
+    "locales": ["en-GB", "fr-FR", "de-DE"],
+    "project_types": ["Legal", "Documentation"]
+  },
+  {
+    "id": 28,
+    "name": "Samsung",
+    "industry": "Manufacturing",
+    "annual_project_target": 190,
+    "locales": ["ko-KR", "ja-JP", "zh-CN", "fr-FR", "de-DE"],
+    "project_types": ["UI", "Documentation", "Marketing"]
+  },
+  {
+    "id": 29,
+    "name": "Amazon",
+    "industry": "Retail",
+    "annual_project_target": 300,
+    "locales": ["fr-FR", "de-DE", "es-ES", "it-IT", "ja-JP"],
+    "project_types": ["UI", "Documentation", "Marketing"]
+  },
+  {
+    "id": 30,
+    "name": "Disney",
+    "industry": "Media & Entertainment",
+    "annual_project_target": 220,
+    "locales": ["fr-FR", "de-DE", "es-ES", "ja-JP", "ko-KR"],
+    "project_types": ["Subtitles", "Marketing", "UI"]
   }
 ]

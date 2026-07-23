@@ -1,981 +1,991 @@
 translator_id,industry
-1,Media & Entertainment
-1,Manufacturing
-1,Retail
-2,Software
-2,Healthcare
-3,Legal
+1,Finance
+1,Software
+2,Travel
+2,Manufacturing
+2,Legal
+3,Finance
+3,Media & Entertainment
 3,Healthcare
-4,Gaming
-5,Media & Entertainment
-5,Healthcare
-6,Software
-6,Manufacturing
-6,Media & Entertainment
-7,Media & Entertainment
-7,E-learning
+4,Media & Entertainment
+4,Finance
+4,E-learning
+5,Retail
+6,Travel
+7,Healthcare
+7,Finance
 7,Retail
-8,Software
-8,Finance
-8,Gaming
-9,Retail
-9,Legal
-9,Media & Entertainment
-10,E-learning
-10,Gaming
-10,Manufacturing
-11,Finance
-12,E-learning
+8,Retail
+9,Software
+9,Healthcare
+10,Legal
+10,Healthcare
+11,Travel
+12,Retail
 12,Manufacturing
-12,Healthcare
-13,Travel
+12,Travel
 13,Retail
-13,Finance
-14,Legal
-14,Media & Entertainment
-14,Finance
-15,Media & Entertainment
-15,Software
-16,Software
-16,Media & Entertainment
-16,Gaming
-17,Legal
+13,Media & Entertainment
+13,Legal
+14,Healthcare
+14,Retail
+14,Gaming
+15,Retail
+15,Manufacturing
+16,E-learning
+16,Finance
+17,E-learning
 17,Software
-18,Retail
-18,Travel
-19,Software
-19,Travel
-20,Travel
-21,Healthcare
-21,Software
+18,E-learning
+19,Legal
+20,Healthcare
+20,Software
+20,Legal
 21,Retail
-22,Finance
-22,E-learning
-23,Manufacturing
-24,Software
+22,Software
+22,Travel
+23,Media & Entertainment
+23,Legal
+24,Media & Entertainment
+24,Finance
+24,E-learning
 25,Travel
-25,Finance
-25,Legal
-26,Media & Entertainment
-27,Retail
-27,E-learning
-27,Legal
-28,Manufacturing
-29,Manufacturing
-29,Gaming
-29,Travel
-30,Retail
-30,E-learning
-30,Healthcare
-31,Gaming
-31,Manufacturing
-32,Healthcare
+25,Gaming
+26,Legal
+27,Manufacturing
+28,Media & Entertainment
+29,Finance
+29,Media & Entertainment
+30,Media & Entertainment
+30,Legal
+31,Healthcare
+31,Media & Entertainment
 32,Retail
-32,Finance
-33,Legal
 33,Manufacturing
-33,Gaming
-34,Healthcare
 34,Manufacturing
-35,Gaming
-36,Media & Entertainment
+35,Healthcare
+35,Legal
+36,Manufacturing
+37,Healthcare
 37,Media & Entertainment
-37,Retail
-38,Travel
-39,Software
-40,Finance
-40,Healthcare
-40,Media & Entertainment
+37,Software
+38,Retail
+38,Legal
+38,Gaming
+39,E-learning
+40,Travel
+40,E-learning
+40,Retail
 41,Legal
-42,E-learning
-42,Manufacturing
-42,Travel
-43,Healthcare
-43,Travel
-43,Manufacturing
-44,Healthcare
+41,Retail
+41,E-learning
+42,Healthcare
+42,Retail
+43,Gaming
 44,Travel
-45,Media & Entertainment
-46,Media & Entertainment
-47,Finance
+44,Gaming
+45,Gaming
+46,Legal
+46,Finance
 47,Software
-47,Legal
+47,Gaming
+47,Travel
+48,Finance
 48,Healthcare
-49,Gaming
 49,Legal
-49,Software
+49,Manufacturing
+49,Media & Entertainment
+50,Travel
 50,Legal
-51,Media & Entertainment
-51,Healthcare
-51,Software
-52,Healthcare
-52,E-learning
-53,Retail
+50,Media & Entertainment
+51,Finance
+51,Retail
+52,Travel
+53,Media & Entertainment
+54,Travel
 54,Gaming
-54,Healthcare
-55,Media & Entertainment
-55,Legal
-56,Manufacturing
-56,Software
-57,Travel
-57,Media & Entertainment
-58,Gaming
-59,Healthcare
-59,Retail
-60,E-learning
-60,Retail
-61,E-learning
-61,Legal
-62,Software
+54,Media & Entertainment
+55,Healthcare
+55,E-learning
+56,Finance
+56,Healthcare
+57,Healthcare
+58,Manufacturing
+58,Legal
+58,Software
+59,E-learning
+60,Healthcare
+61,Travel
+62,E-learning
+63,Media & Entertainment
+63,Travel
 63,Gaming
-64,Media & Entertainment
-64,Software
-65,Healthcare
-66,E-learning
+64,E-learning
+65,Media & Entertainment
+65,Gaming
+65,Finance
+66,Media & Entertainment
+67,Software
 67,Gaming
-68,Finance
-68,Manufacturing
-68,Retail
-69,Travel
-69,E-learning
+68,Media & Entertainment
 69,Legal
-70,E-learning
+69,E-learning
+70,Software
 70,Retail
-71,Gaming
-71,Finance
-72,Gaming
-72,Media & Entertainment
-72,Software
-73,E-learning
-73,Gaming
+71,Retail
+71,Media & Entertainment
+72,Travel
 73,Legal
-74,Retail
-75,Healthcare
-75,Travel
-76,Media & Entertainment
-76,Software
-76,Legal
-77,Finance
-78,Finance
-79,Media & Entertainment
-80,Gaming
-80,Healthcare
-81,E-learning
-82,Legal
-83,Legal
-84,Media & Entertainment
-84,Gaming
-84,Retail
-85,Software
-85,Travel
-86,Software
-86,Healthcare
-87,Manufacturing
-88,Travel
-88,Finance
-89,Travel
-89,Gaming
-90,Software
-90,Retail
-90,Legal
-91,Media & Entertainment
+73,Travel
+74,Travel
+75,Retail
+75,Gaming
+76,Travel
+76,E-learning
+76,Retail
+77,Legal
+77,E-learning
+78,Software
+79,Gaming
+80,Retail
+81,Healthcare
+82,Manufacturing
+82,Travel
+83,Retail
+83,Finance
+84,Manufacturing
+85,Gaming
+86,Legal
+86,Media & Entertainment
+87,Gaming
+87,Finance
+88,Retail
+89,Finance
+89,Software
+90,Travel
+90,Healthcare
+91,Retail
+91,E-learning
+91,Travel
 92,Finance
 92,Software
-93,Travel
+93,Software
 94,E-learning
-95,Media & Entertainment
-95,Legal
-95,Gaming
+94,Legal
+94,Finance
+95,Finance
+95,E-learning
 96,Legal
-96,E-learning
-96,Finance
-97,Gaming
-97,Retail
-97,E-learning
-98,Software
-98,E-learning
-98,Legal
-99,Travel
-99,Retail
-100,E-learning
-100,Software
-100,Media & Entertainment
-101,Media & Entertainment
-101,Software
-102,Travel
-102,Gaming
+96,Media & Entertainment
+97,Manufacturing
+97,Software
+97,Travel
+98,Media & Entertainment
+98,Gaming
+99,E-learning
+100,Manufacturing
+101,Legal
+101,Finance
+101,E-learning
+102,Software
 103,Manufacturing
-103,Retail
-103,Gaming
-104,E-learning
-104,Healthcare
-104,Gaming
-105,Travel
-105,Healthcare
-106,Healthcare
-107,Gaming
+104,Retail
+105,Gaming
+105,Media & Entertainment
+105,Finance
+106,Travel
 107,Legal
-107,Media & Entertainment
-108,Media & Entertainment
-109,Manufacturing
-109,Media & Entertainment
-109,Legal
-110,Healthcare
-111,Finance
+107,E-learning
+107,Manufacturing
+108,Manufacturing
+108,Healthcare
+109,Finance
+109,Software
+109,Travel
+110,Media & Entertainment
+110,Gaming
+110,Software
 111,Legal
-112,Finance
-112,Healthcare
-113,Finance
-113,Gaming
-113,Manufacturing
+111,Gaming
+112,Retail
+112,Media & Entertainment
+113,Media & Entertainment
+113,Healthcare
 114,Gaming
+114,Retail
+115,Retail
 115,Travel
-115,Software
+115,Gaming
+116,Finance
+116,Healthcare
 116,Gaming
-117,Retail
-118,Finance
-119,Healthcare
-119,Finance
+117,Healthcare
+117,Media & Entertainment
+118,E-learning
+119,Legal
+119,Software
 119,E-learning
 120,E-learning
-120,Retail
-121,Travel
-121,Finance
-122,Finance
+121,Legal
+121,Media & Entertainment
 122,Travel
-123,Legal
-123,Gaming
-124,Manufacturing
+122,Media & Entertainment
+122,Healthcare
+123,Finance
+124,Software
+124,Finance
+124,E-learning
 125,Software
-125,E-learning
+125,Gaming
 126,Media & Entertainment
-127,Media & Entertainment
-128,Legal
-129,Healthcare
+127,E-learning
+127,Healthcare
+127,Gaming
+128,Travel
+129,Finance
 129,Retail
-130,E-learning
-130,Travel
-130,Gaming
-131,Retail
+130,Media & Entertainment
+131,Finance
+131,Manufacturing
 132,Travel
+132,Software
+132,E-learning
 133,Legal
-133,Travel
-134,Manufacturing
-134,Travel
-134,Media & Entertainment
+133,E-learning
+134,Retail
+134,Software
+135,Manufacturing
 135,Software
-136,Software
-137,Travel
-138,Retail
-138,E-learning
-138,Legal
-139,Healthcare
-139,Software
+135,Legal
+136,E-learning
+136,Finance
+137,Legal
+137,Media & Entertainment
+137,E-learning
+138,Media & Entertainment
 139,Legal
+139,Software
+139,Media & Entertainment
 140,Media & Entertainment
-140,Travel
-141,Finance
-141,Manufacturing
-141,Travel
-142,Legal
-143,E-learning
-144,Media & Entertainment
-144,Legal
-144,Manufacturing
+140,Finance
+141,Healthcare
+142,Software
+143,Gaming
+144,E-learning
+144,Retail
+145,Healthcare
 145,Gaming
-146,Finance
-146,Healthcare
-146,Media & Entertainment
+146,Travel
+146,E-learning
+147,Retail
+147,Software
 147,Finance
-148,Finance
-148,Gaming
-149,Finance
-150,Legal
-150,Gaming
-150,E-learning
-151,Gaming
-151,Retail
-152,Legal
-152,Healthcare
-153,E-learning
-153,Travel
-153,Healthcare
-154,Legal
+148,Manufacturing
+148,Media & Entertainment
+148,Legal
+149,Manufacturing
+149,Travel
+150,Manufacturing
+150,Healthcare
+151,Travel
+152,Media & Entertainment
+152,Manufacturing
+152,Travel
+153,Media & Entertainment
+154,E-learning
 154,Retail
-155,Retail
-155,Software
-155,Finance
-156,Manufacturing
+155,Healthcare
+156,Healthcare
+156,Finance
 157,Manufacturing
-157,Gaming
 158,Legal
-158,Travel
-158,Healthcare
-159,Healthcare
-159,Travel
+159,Manufacturing
 160,Legal
-160,Gaming
-160,Retail
-161,Healthcare
-161,Finance
-162,Media & Entertainment
+161,Gaming
+161,Travel
 162,Retail
-163,Travel
-164,E-learning
-165,Healthcare
+162,Finance
+162,Gaming
+163,Software
+164,Travel
+164,Healthcare
+164,Finance
+165,Software
 165,Retail
-166,Finance
-167,Media & Entertainment
-168,Healthcare
+165,Legal
+166,Legal
+166,Manufacturing
+166,Software
+167,Travel
+167,Finance
+167,E-learning
+168,Retail
+169,Manufacturing
 169,Retail
-169,E-learning
-169,Gaming
-170,Healthcare
 170,Finance
-170,Manufacturing
-171,Finance
-172,Healthcare
-172,Legal
-173,Finance
-173,Media & Entertainment
-173,Retail
-174,Legal
-174,E-learning
+170,Software
+171,E-learning
+172,Finance
+172,Software
+173,Manufacturing
+174,Retail
+175,Legal
+175,Media & Entertainment
 175,Gaming
-175,Manufacturing
-175,Healthcare
-176,Travel
-176,Manufacturing
-177,Finance
+176,Media & Entertainment
+177,Gaming
 177,Media & Entertainment
-177,Manufacturing
-178,Manufacturing
-178,Legal
-179,Software
-179,Legal
+177,Healthcare
+178,Travel
 179,Healthcare
-180,Gaming
-180,Healthcare
-180,Retail
-181,Media & Entertainment
-182,Finance
-183,Healthcare
-184,Software
-184,Retail
-185,Finance
+180,Legal
+180,Travel
+180,Software
+181,E-learning
+181,Legal
+181,Travel
+182,Healthcare
+182,Software
+183,Legal
+184,Legal
+184,Finance
 185,Retail
-186,Healthcare
-187,Healthcare
-188,Travel
-188,Manufacturing
-189,Media & Entertainment
-190,Retail
-190,Finance
-191,Gaming
-191,E-learning
-192,Legal
-192,Travel
-192,E-learning
-193,Retail
-193,Manufacturing
-194,E-learning
-195,Manufacturing
-195,Legal
+186,Software
+187,Media & Entertainment
+187,Travel
+188,Healthcare
+188,Legal
+188,Retail
+189,Finance
+189,Healthcare
+189,Manufacturing
+190,Healthcare
+191,Retail
+191,Media & Entertainment
+192,Retail
+192,Software
+193,Software
+193,Legal
+193,Finance
+194,Software
 195,Software
 196,E-learning
-196,Travel
+196,Gaming
 197,E-learning
-198,Finance
+197,Legal
+198,Manufacturing
 199,Legal
-200,Media & Entertainment
-200,Retail
-201,Retail
-202,E-learning
+199,Finance
+200,Manufacturing
+200,Software
+200,Healthcare
+201,Manufacturing
 202,Manufacturing
 202,Media & Entertainment
-203,Software
-203,E-learning
+202,Healthcare
+203,Gaming
 203,Healthcare
-204,Healthcare
 204,Retail
-204,Travel
-205,Software
 205,Legal
-205,Gaming
+206,Manufacturing
 206,E-learning
-207,Manufacturing
-208,Software
-208,Finance
-209,Gaming
-210,Manufacturing
-211,E-learning
-211,Legal
-212,E-learning
-213,Retail
-213,Finance
-213,Gaming
-214,Retail
-215,Media & Entertainment
-216,Software
-216,Manufacturing
+207,Legal
+208,Media & Entertainment
+209,Media & Entertainment
+209,E-learning
+209,Manufacturing
+210,E-learning
+210,Healthcare
+211,Retail
+211,Media & Entertainment
+212,Manufacturing
+212,Healthcare
+212,Retail
+213,Software
+213,E-learning
+213,Manufacturing
+214,Manufacturing
+214,Travel
+215,Manufacturing
+215,Gaming
+216,Travel
+216,E-learning
 217,Gaming
-217,Finance
-218,Travel
+218,Legal
+219,Software
 219,Finance
-219,Retail
-219,Manufacturing
-220,Software
+220,Travel
+220,E-learning
+220,Legal
 221,Software
-221,Travel
-221,Retail
-222,Retail
-222,Software
+222,Healthcare
+222,Media & Entertainment
+222,Finance
 223,Travel
-223,E-learning
-223,Software
-224,Healthcare
+223,Finance
 224,E-learning
-224,Software
-225,Media & Entertainment
-225,Finance
-225,Gaming
-226,E-learning
-226,Retail
-226,Finance
-227,Travel
+224,Healthcare
+225,Legal
+225,Manufacturing
+226,Software
+226,Media & Entertainment
 227,Retail
-227,E-learning
-228,E-learning
 228,Software
-229,Finance
-230,Software
-231,Media & Entertainment
-232,Manufacturing
+228,Finance
+228,Manufacturing
+229,Healthcare
+229,Software
+230,Finance
+231,Healthcare
 232,Healthcare
-233,Finance
-233,Retail
-233,Manufacturing
-234,Manufacturing
-234,Travel
-234,Software
-235,Travel
-236,Finance
+232,Finance
+233,Healthcare
+233,Media & Entertainment
+233,Legal
+234,Legal
+234,Gaming
+235,Finance
+235,Legal
+235,Media & Entertainment
 236,Legal
-237,Finance
-238,Software
-238,Gaming
+237,E-learning
+237,Manufacturing
+238,Travel
+238,E-learning
+238,Healthcare
+239,Finance
 239,Software
-239,Media & Entertainment
-239,Legal
-240,Travel
-241,Finance
-241,Media & Entertainment
-242,Retail
-243,E-learning
-243,Healthcare
+240,Healthcare
+240,Gaming
+240,Finance
+241,Healthcare
+242,Finance
 243,Legal
-244,Manufacturing
-244,Finance
-245,Manufacturing
+243,Travel
+244,Legal
+244,E-learning
+245,Software
+246,Retail
 246,Manufacturing
-246,Finance
-246,E-learning
-247,Gaming
-247,Media & Entertainment
-248,Travel
+247,Software
+247,E-learning
+248,Healthcare
+248,Manufacturing
 248,Finance
-248,E-learning
-249,E-learning
-249,Software
+249,Finance
+249,Travel
 250,Manufacturing
-251,Legal
-252,Travel
-252,E-learning
-253,Travel
+250,E-learning
+251,Software
+251,Travel
+252,Healthcare
+253,Software
+253,Gaming
+253,E-learning
 254,Manufacturing
-255,Finance
-256,Travel
-256,E-learning
-256,Software
-257,Finance
+254,Retail
+254,Media & Entertainment
+255,Manufacturing
+255,Gaming
+255,E-learning
+256,Gaming
+257,Travel
 258,Travel
-258,Manufacturing
-259,E-learning
-260,Manufacturing
+258,Media & Entertainment
+258,Healthcare
+259,Travel
+259,Legal
 260,E-learning
-260,Gaming
-261,Travel
-261,Software
+261,Retail
+261,Legal
 262,E-learning
-263,Software
-263,Healthcare
-264,Manufacturing
-264,Finance
-265,Media & Entertainment
-265,Retail
-265,E-learning
-266,Finance
-267,Manufacturing
+262,Retail
+262,Healthcare
+263,Media & Entertainment
+263,Retail
+263,Gaming
+264,E-learning
+264,Gaming
+265,Gaming
+266,Gaming
+266,Retail
+267,Travel
 267,Retail
-268,Travel
-269,Travel
-269,Legal
+268,E-learning
+268,Legal
+268,Media & Entertainment
+269,Healthcare
 270,Software
-271,Retail
-272,Manufacturing
-273,Manufacturing
-274,Retail
-274,Manufacturing
-274,Finance
-275,Software
-275,Gaming
+270,Finance
+270,Gaming
+271,Manufacturing
+271,Software
+271,Legal
+272,Software
+272,Media & Entertainment
+273,Finance
+274,E-learning
+274,Gaming
+274,Travel
 275,Manufacturing
-276,Software
-276,Healthcare
-276,Travel
-277,Gaming
-277,Retail
-278,Travel
-279,Software
-280,Gaming
-280,Manufacturing
+275,Legal
+275,Media & Entertainment
+276,Finance
+277,Finance
+277,Healthcare
+278,Retail
+279,Legal
+279,Media & Entertainment
+280,Software
+281,Media & Entertainment
 281,Software
-281,Manufacturing
-281,Gaming
-282,Gaming
-283,Travel
-284,Finance
-285,Retail
-286,Retail
-287,Finance
-288,Retail
-288,Software
-289,Media & Entertainment
+282,Healthcare
+282,Travel
+282,Manufacturing
+283,Retail
+283,Media & Entertainment
+284,Retail
+285,Finance
+285,Gaming
+285,Healthcare
+286,Legal
+287,Manufacturing
+287,Gaming
+287,Travel
+288,E-learning
+288,Finance
+288,Media & Entertainment
+289,Legal
 289,Software
-289,Healthcare
-290,Retail
-291,Media & Entertainment
-291,Healthcare
-292,Retail
-293,Media & Entertainment
-293,Legal
-294,Healthcare
+290,Healthcare
+291,Travel
+291,Finance
+292,Finance
+292,Healthcare
+293,Manufacturing
+293,Healthcare
+293,Software
+294,Software
+294,Gaming
 294,Retail
-294,Manufacturing
+295,Media & Entertainment
+295,Healthcare
 295,Manufacturing
-295,Software
-295,Travel
+296,Manufacturing
 296,Finance
-297,Manufacturing
+296,Media & Entertainment
+297,Healthcare
 297,Software
-297,Media & Entertainment
-298,Media & Entertainment
-298,E-learning
-299,Manufacturing
-300,Gaming
-300,Retail
-300,Media & Entertainment
-301,Retail
-301,E-learning
-302,Finance
+297,Manufacturing
+298,Gaming
+298,Travel
+298,Software
+299,Travel
+299,Legal
+300,Finance
+300,Healthcare
+301,Gaming
+302,Legal
 303,Manufacturing
-304,Legal
-305,Travel
-306,Gaming
-307,Gaming
-307,Legal
+303,Healthcare
+303,Legal
+304,Software
+304,E-learning
+305,Gaming
+306,Legal
 307,E-learning
-308,Retail
+307,Legal
+307,Software
 308,Gaming
+308,Travel
+308,Software
 309,Software
-310,Healthcare
-311,Travel
-311,Gaming
-312,Travel
-312,E-learning
-312,Gaming
-313,Travel
-314,Gaming
-314,Media & Entertainment
+309,Retail
+309,Media & Entertainment
+310,Media & Entertainment
+310,Finance
+310,Software
+311,Media & Entertainment
+311,Finance
+312,Software
+313,Finance
+313,Legal
+314,Finance
 314,Retail
-315,Media & Entertainment
-315,Finance
-315,Retail
-316,Gaming
-316,Media & Entertainment
-317,Legal
-318,Gaming
-318,Retail
+314,Legal
+315,Travel
+316,Travel
+316,Manufacturing
+316,E-learning
+317,Retail
+317,Manufacturing
+317,Travel
 318,Finance
-319,E-learning
-320,Travel
-320,Retail
-320,Healthcare
-321,Gaming
-321,Finance
-322,Gaming
-322,Software
-323,Gaming
-323,E-learning
+318,Retail
+318,Healthcare
+319,Retail
+319,Travel
+319,Software
+320,Software
+320,Gaming
+321,Legal
+321,Retail
+322,Retail
+323,Healthcare
+324,Gaming
 324,Healthcare
-324,Legal
-324,Manufacturing
-325,Media & Entertainment
+325,Retail
+325,E-learning
 325,Gaming
-325,Legal
-326,Software
+326,Travel
 326,Legal
-326,E-learning
-327,E-learning
-328,Finance
-328,Manufacturing
-329,Finance
-329,Retail
-329,Gaming
-330,Media & Entertainment
+327,Finance
+327,Media & Entertainment
+328,E-learning
+329,Media & Entertainment
+329,Healthcare
+330,Finance
 330,Travel
-330,Software
-331,Manufacturing
-331,Retail
-332,Legal
-333,Travel
-333,Legal
-334,Software
-334,E-learning
-335,Travel
-335,Legal
-336,Media & Entertainment
-337,Gaming
-337,Manufacturing
+330,Gaming
+331,Healthcare
+331,Travel
+331,Gaming
+332,Retail
+332,Travel
+333,Healthcare
+333,Gaming
+334,Gaming
+335,Media & Entertainment
+336,Travel
+336,E-learning
+336,Gaming
+337,Retail
 337,Software
-338,Finance
-339,Healthcare
+337,Media & Entertainment
+338,Manufacturing
+338,Healthcare
+339,Media & Entertainment
 339,Finance
-340,Manufacturing
-341,Software
-341,Legal
-341,Finance
+339,Legal
+340,Healthcare
+340,Finance
+340,Software
+341,E-learning
+341,Media & Entertainment
+342,Gaming
 342,Retail
+343,E-learning
 343,Media & Entertainment
-343,Travel
-343,Software
-344,Healthcare
-345,Software
-346,Gaming
-347,Software
+344,Media & Entertainment
+345,Manufacturing
+346,Legal
+346,Manufacturing
+347,Healthcare
 348,Retail
-349,Software
-349,Media & Entertainment
-349,Travel
-350,Retail
-351,Finance
-351,Retail
-351,Healthcare
-352,Manufacturing
+348,Legal
+348,Manufacturing
+349,Legal
+349,Finance
+349,E-learning
+350,E-learning
+350,Software
+350,Legal
+351,Media & Entertainment
+352,Media & Entertainment
 353,Legal
-354,Gaming
+353,Travel
+354,Healthcare
 355,E-learning
-355,Travel
-356,Manufacturing
-357,Software
-357,Gaming
-358,Software
-358,Gaming
-358,Finance
-359,Software
-359,Travel
+355,Legal
+356,Travel
+357,Media & Entertainment
+357,Retail
+357,E-learning
+358,Media & Entertainment
+359,Legal
+359,Finance
 360,Software
-360,Manufacturing
-361,Travel
-361,Healthcare
-361,Finance
-362,Software
+361,Software
+361,Gaming
 362,Healthcare
-362,Manufacturing
-363,Legal
+362,Software
 363,Software
-363,Travel
-364,Manufacturing
+363,Manufacturing
+364,Retail
 365,Healthcare
-365,Gaming
-365,Retail
-366,Retail
-366,Media & Entertainment
-367,Gaming
-367,Finance
-368,E-learning
-368,Media & Entertainment
-369,Gaming
-369,Software
-370,Retail
+365,Software
+365,Media & Entertainment
+366,Manufacturing
+366,E-learning
+367,Manufacturing
+368,Retail
+368,Manufacturing
+368,Travel
+369,Legal
+369,Finance
+370,Media & Entertainment
 370,Software
-370,Finance
-371,Manufacturing
-371,Media & Entertainment
-372,Retail
-372,Travel
+371,Finance
+371,Healthcare
+372,Software
 372,Manufacturing
-373,Media & Entertainment
 373,Healthcare
+373,Media & Entertainment
+374,Manufacturing
 374,Gaming
-374,Retail
-374,Healthcare
-375,Media & Entertainment
-375,Manufacturing
-376,E-learning
-377,Legal
-378,Legal
+375,E-learning
+375,Healthcare
+376,Gaming
+376,Media & Entertainment
+377,Finance
 378,Travel
-378,Media & Entertainment
-379,E-learning
+378,Retail
+379,Travel
 379,Retail
+380,Media & Entertainment
+380,Manufacturing
 380,Travel
-380,Software
-380,Retail
-381,Finance
 381,Gaming
-381,Healthcare
-382,Manufacturing
-382,Software
-383,Media & Entertainment
-384,E-learning
-384,Legal
-384,Gaming
-385,Legal
-386,Finance
-386,Healthcare
-387,E-learning
-387,Finance
+382,Healthcare
+382,Media & Entertainment
+382,Legal
+383,E-learning
+384,Media & Entertainment
+384,Travel
+384,Software
+385,Gaming
+385,Healthcare
+386,Software
 387,Gaming
-388,Finance
+387,Media & Entertainment
+387,Healthcare
 388,Travel
-389,Manufacturing
-389,Software
-390,Gaming
-390,E-learning
+388,Media & Entertainment
+388,Finance
+389,Legal
+390,Media & Entertainment
+390,Healthcare
 391,Healthcare
-392,Healthcare
-392,Gaming
-393,Healthcare
-394,Legal
-394,Manufacturing
-394,Software
-395,Travel
+392,Legal
+392,Finance
+392,Travel
+393,Software
+394,Finance
+394,Media & Entertainment
 395,Finance
-395,Retail
-396,Retail
-396,Travel
-396,Software
-397,Manufacturing
-398,Software
-398,Healthcare
-398,E-learning
+396,Healthcare
+396,Manufacturing
+396,E-learning
+397,Legal
+397,Software
+397,Retail
+398,Manufacturing
+398,Gaming
 399,Software
-400,Manufacturing
-401,Media & Entertainment
+400,Software
+400,Media & Entertainment
 401,Travel
-401,Legal
-402,Media & Entertainment
-403,Gaming
-403,Manufacturing
-404,E-learning
-404,Software
-405,Software
+401,Software
+402,Retail
+402,Travel
+402,Finance
+403,Healthcare
+404,Travel
+404,Healthcare
+404,Manufacturing
+405,Finance
+405,Manufacturing
 405,Legal
-405,Travel
 406,Legal
-406,Gaming
-407,Manufacturing
-408,Manufacturing
-408,Legal
-408,Gaming
-409,Media & Entertainment
-410,E-learning
-410,Retail
-411,Travel
-411,Retail
-411,E-learning
-412,Finance
-412,E-learning
-412,Travel
-413,Healthcare
-413,Manufacturing
-413,Legal
-414,E-learning
-415,Manufacturing
-415,Healthcare
-415,Gaming
-416,Media & Entertainment
-417,Media & Entertainment
+407,Legal
+407,Travel
+408,Healthcare
+409,Legal
+409,Manufacturing
+409,Travel
+410,Media & Entertainment
+410,Healthcare
+410,Software
+411,Finance
+411,Healthcare
+412,Retail
+412,Healthcare
+412,Legal
+413,E-learning
+414,Finance
+415,Media & Entertainment
+415,Retail
+416,Gaming
+416,Manufacturing
+416,Finance
+417,Software
 417,Travel
-417,E-learning
-418,Software
 418,Healthcare
-418,Travel
-419,Legal
-420,Healthcare
-420,Travel
-420,Gaming
+418,Legal
+419,Travel
+419,Healthcare
+420,Retail
+421,Legal
 421,Retail
-422,Legal
+421,E-learning
 422,Travel
-422,Healthcare
-423,Manufacturing
-424,Media & Entertainment
-425,E-learning
+422,Legal
+422,Finance
+423,Travel
+424,Retail
+424,Gaming
 425,Retail
-425,Legal
-426,Finance
-426,Travel
-426,Media & Entertainment
-427,Retail
+426,Manufacturing
+426,Retail
+427,Travel
+427,Finance
 427,Software
-428,Gaming
-428,Healthcare
-428,Finance
-429,Media & Entertainment
-429,Finance
+428,Software
 429,Healthcare
-430,E-learning
-431,Retail
-432,Manufacturing
+429,Travel
+429,Media & Entertainment
+430,Media & Entertainment
+430,Gaming
+431,Travel
+431,Gaming
+431,Legal
+432,Legal
 433,Legal
-434,Software
-435,Gaming
-435,Finance
-435,Media & Entertainment
-436,Legal
-437,Manufacturing
-437,E-learning
-438,Travel
-439,Healthcare
-440,Healthcare
-440,Travel
-440,Retail
-441,Travel
-442,Legal
+433,Gaming
+434,Manufacturing
+435,Software
+436,Healthcare
+436,Finance
+436,Gaming
+437,Finance
+438,Legal
+438,Retail
+438,Software
+439,Media & Entertainment
+439,Legal
+439,Finance
+440,Finance
+441,Retail
+441,Legal
 442,Manufacturing
-443,Travel
+442,Software
+442,Media & Entertainment
+443,Healthcare
+443,Finance
+443,E-learning
+444,Gaming
 444,Travel
-444,Healthcare
-445,Retail
-445,Finance
-445,Software
-446,Travel
-447,Manufacturing
-447,E-learning
-447,Travel
-448,Retail
-448,Healthcare
-448,Travel
-449,Media & Entertainment
-449,Legal
-449,Healthcare
-450,Software
-450,Healthcare
-451,Retail
-451,Media & Entertainment
-452,Retail
-452,Software
-453,Media & Entertainment
-453,Gaming
-454,Gaming
-455,Manufacturing
-455,Gaming
-456,Retail
-456,Manufacturing
-457,E-learning
-457,Legal
+444,Retail
+445,Healthcare
+445,Gaming
+446,Retail
+446,Gaming
+447,Software
+447,Finance
+447,Retail
+448,E-learning
+449,Software
+450,Retail
+450,Finance
+451,Travel
+451,Legal
+452,Legal
+453,Healthcare
+453,Retail
+454,Manufacturing
+454,Finance
+454,Media & Entertainment
+455,Retail
+456,Healthcare
+456,Media & Entertainment
+456,Gaming
 457,Travel
-458,Finance
-459,Retail
-459,E-learning
-460,Finance
-460,Software
-461,E-learning
-461,Manufacturing
-462,Media & Entertainment
+458,Travel
+458,Healthcare
+458,Gaming
+459,Media & Entertainment
+459,Finance
+460,Gaming
+461,Software
+461,Media & Entertainment
 462,Legal
-462,Software
-463,Media & Entertainment
+462,Healthcare
 463,Healthcare
-463,Retail
-464,Media & Entertainment
-464,Retail
+464,Manufacturing
 465,Retail
-466,Software
-467,Gaming
-468,Healthcare
-468,Travel
+465,Media & Entertainment
+466,Healthcare
+466,Retail
+467,Software
+467,Travel
+468,E-learning
 468,Gaming
-469,Healthcare
-470,Travel
-470,Retail
-470,Media & Entertainment
+469,Travel
+469,Manufacturing
+469,Legal
+470,Healthcare
+470,Software
+470,Manufacturing
+471,Healthcare
 471,Software
-471,Legal
 471,Retail
-472,Finance
+472,E-learning
 473,Retail
-473,Legal
-473,Manufacturing
-474,Software
-475,Media & Entertainment
+474,Travel
+474,Media & Entertainment
+475,Gaming
 475,Healthcare
-475,Software
-476,Legal
-476,Gaming
-476,Retail
-477,Media & Entertainment
-477,Software
-477,Healthcare
-478,Software
-478,Gaming
-479,Retail
+475,Finance
+476,Travel
+476,Manufacturing
+477,Legal
+477,Manufacturing
+477,Retail
+478,Manufacturing
+478,Healthcare
 479,Travel
-480,Finance
-480,E-learning
 480,Media & Entertainment
-481,Gaming
-481,Software
+480,Manufacturing
+480,Gaming
+481,Media & Entertainment
 482,E-learning
-482,Gaming
-483,Manufacturing
-484,Healthcare
-485,Software
-485,Healthcare
+483,Media & Entertainment
+483,Legal
+483,Finance
+484,E-learning
+484,Software
+485,Retail
+485,Legal
+485,Gaming
 486,Finance
-486,Healthcare
-486,Media & Entertainment
-487,Legal
-487,Software
+487,Retail
 487,Media & Entertainment
+488,Gaming
 488,Retail
-488,Travel
-488,Finance
+488,Healthcare
 489,Manufacturing
-490,Finance
-491,E-learning
-491,Travel
-492,Retail
-492,Media & Entertainment
-492,Travel
-493,E-learning
-493,Retail
-494,Legal
-494,Retail
-495,Manufacturing
-495,E-learning
-495,Media & Entertainment
-496,Finance
-496,Healthcare
+490,Healthcare
+491,Healthcare
+491,Media & Entertainment
+491,Gaming
+492,Healthcare
+492,Software
+493,Finance
+493,Manufacturing
+494,Software
+495,Healthcare
+495,Travel
+495,Retail
+496,Retail
+496,Travel
 497,Software
-497,Healthcare
-497,Gaming
-498,Gaming
-498,Software
-499,Software
-499,Manufacturing
-500,Manufacturing
+497,Retail
+497,Finance
+498,Travel
+498,E-learning
+498,Manufacturing
+499,Healthcare
+499,Legal
 500,Gaming
-500,Healthcare
+500,Manufacturing
+500,Retail
