@@ -1,62 +1,110 @@
 [
   {
     "id": 1,
-    "name": "English",
-    "code": "en-GB"
+    "locale": "en-GB",
+    "language": "English",
+    "region": "United Kingdom"
   },
   {
     "id": 2,
-    "name": "French (France)",
-    "code": "fr-FR"
+    "locale": "en-US",
+    "language": "English",
+    "region": "United States"
   },
   {
     "id": 3,
-    "name": "German",
-    "code": "de-DE"
+    "locale": "en-AU",
+    "language": "English",
+    "region": "Australia"
   },
   {
     "id": 4,
-    "name": "Spanish (Spain)",
-    "code": "es-ES"
+    "locale": "fr-FR",
+    "language": "French",
+    "region": "France"
   },
   {
     "id": 5,
-    "name": "Italian",
-    "code": "it-IT"
+    "locale": "fr-CA",
+    "language": "French",
+    "region": "Canada"
   },
   {
     "id": 6,
-    "name": "Dutch",
-    "code": "nl-NL"
+    "locale": "es-ES",
+    "language": "Spanish",
+    "region": "Spain"
   },
   {
     "id": 7,
-    "name": "Polish",
-    "code": "pl-PL"
+    "locale": "es-MX",
+    "language": "Spanish",
+    "region": "Mexico"
   },
   {
     "id": 8,
-    "name": "Portuguese (Brazil)",
-    "code": "pt-BR"
+    "locale": "es-LN",
+    "language": "Spanish",
+    "region": "Latin America"
   },
   {
     "id": 9,
-    "name": "Japanese",
-    "code": "ja-JP"
+    "locale": "pt-BR",
+    "language": "Portuguese",
+    "region": "Brazil"
   },
   {
     "id": 10,
-    "name": "Korean",
-    "code": "ko-KR"
+    "locale": "pt-PT",
+    "language": "Portuguese",
+    "region": "Portugal"
   },
   {
     "id": 11,
-    "name": "Chinese (Simplified)",
-    "code": "zh-CN"
+    "locale": "de-DE",
+    "language": "German",
+    "region": "Germany"
   },
   {
     "id": 12,
-    "name": "Chinese (Traditional)",
-    "code": "zh-TW"
+    "locale": "it-IT",
+    "language": "Italian",
+    "region": "Italy"
+  },
+  {
+    "id": 13,
+    "locale": "nl-NL",
+    "language": "Dutch",
+    "region": "Netherlands"
+  },
+  {
+    "id": 14,
+    "locale": "pl-PL",
+    "language": "Polish",
+    "region": "Poland"
+  },
+  {
+    "id": 15,
+    "locale": "ja-JP",
+    "language": "Japanese",
+    "region": "Japan"
+  },
+  {
+    "id": 16,
+    "locale": "ko-KR",
+    "language": "Korean",
+    "region": "South Korea"
+  },
+  {
+    "id": 17,
+    "locale": "zh-CN",
+    "language": "Chinese",
+    "region": "China"
+  },
+  {
+    "id": 18,
+    "locale": "zh-TW",
+    "language": "Chinese",
+    "region": "Taiwan"
   }
 ]

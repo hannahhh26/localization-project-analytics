@@ -1,0 +1,19 @@
+id,locale,language,region
+1,en-GB,English,United Kingdom
+2,en-US,English,United States
+3,en-AU,English,Australia
+4,fr-FR,French,France
+5,fr-CA,French,Canada
+6,es-ES,Spanish,Spain
+7,es-MX,Spanish,Mexico
+8,es-LN,Spanish,Latin America
+9,pt-BR,Portuguese,Brazil
+10,pt-PT,Portuguese,Portugal
+11,de-DE,German,Germany
+12,it-IT,Italian,Italy
+13,nl-NL,Dutch,Netherlands
+14,pl-PL,Polish,Poland
+15,ja-JP,Japanese,Japan
+16,ko-KR,Korean,South Korea
+17,zh-CN,Chinese,China
+18,zh-TW,Chinese,Taiwan

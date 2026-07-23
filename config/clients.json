@@ -5,11 +5,11 @@
     "industry": "Software",
     "annual_project_target": 320,
     "locales": [
-      "French",
-      "German",
-      "Spanish",
-      "Japanese",
-      "Chinese (Simplified)"
+      "fr-FR",
+      "de-DE",
+      "es-ES",
+      "ja-JP",
+      "zh-CN"
     ],
     "project_types": [
       "UI",
@@ -24,11 +24,10 @@
     "industry": "Gaming",
     "annual_project_target": 260,
     "locales": [
-      "English",
-      "Japanese",
-      "French",
-      "German",
-      "Spanish"
+      "ja-JP",
+      "fr-FR",
+      "de-DE",
+      "es-ES"
     ],
     "project_types": [
       "UI",
@@ -42,12 +41,12 @@
     "industry": "Retail",
     "annual_project_target": 210,
     "locales": [
-      "French",
-      "German",
-      "Spanish",
-      "Italian",
-      "Dutch",
-      "Polish"
+      "fr-FR",
+      "de-DE",
+      "es-ES",
+      "it-IT",
+      "nl-NL",
+      "pl-PL"
     ],
     "project_types": [
       "Marketing",
@@ -61,9 +60,9 @@
     "industry": "Finance",
     "annual_project_target": 180,
     "locales": [
-      "French",
-      "German",
-      "Chinese (Simplified)"
+      "fr-FR",
+      "de-DE",
+      "zh-CN"
     ],
     "project_types": [
       "Documentation",
@@ -77,11 +76,11 @@
     "industry": "Media & Entertainment",
     "annual_project_target": 240,
     "locales": [
-      "French",
-      "German",
-      "Spanish",
-      "Japanese",
-      "Korean"
+      "fr-FR",
+      "de-DE",
+      "es-ES",
+      "ja-JP",
+      "ko-KR"
     ],
     "project_types": [
       "Marketing",

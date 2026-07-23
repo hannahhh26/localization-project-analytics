@@ -1,0 +1,6 @@
+id,name,industry,annual_project_target,locales,project_types
+1,Microsoft,Software,320,"['fr-FR', 'de-DE', 'es-ES', 'ja-JP', 'zh-CN']","['UI', 'Documentation', 'Marketing', 'Training']"
+2,Nintendo,Gaming,260,"['ja-JP', 'fr-FR', 'de-DE', 'es-ES']","['UI', 'Marketing', 'Subtitles']"
+3,IKEA,Retail,210,"['fr-FR', 'de-DE', 'es-ES', 'it-IT', 'nl-NL', 'pl-PL']","['Marketing', 'Documentation', 'Training']"
+4,HSBC,Finance,180,"['fr-FR', 'de-DE', 'zh-CN']","['Documentation', 'Legal', 'Training']"
+5,Netflix,Media & Entertainment,240,"['fr-FR', 'de-DE', 'es-ES', 'ja-JP', 'ko-KR']","['Marketing', 'Subtitles', 'UI']"
