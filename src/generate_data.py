@@ -5,9 +5,10 @@ import pandas as pd
 from faker import Faker
 import random
 
-# Use a seed for reproducibility
+# Use a seeds for reproducibility
 fake = Faker()
 Faker.seed(42)
+random.seed(42)
 
 # Project paths
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
@@ -320,7 +321,7 @@ def generate_project_assignments(project_locales, projects, translator_locales):
 
 def generate_qa_results(projects, project_locales):
     """
-    Generate QA results for projects that require QA.
+    Generate QA results for completed projects and projects currently in QA.
     """
 
     project_types = load_json("project_types.json")
@@ -346,15 +347,38 @@ def generate_qa_results(projects, project_locales):
         if not project_type["qa_required"]:
             continue
 
-        # Generate quality metrics
+        # QA results should only exist once a project reaches QA
+        if project["status"] not in ["QA", "Completed"]:
+            continue
+
+        # Generate quality metrics with most reviews containing
+        # no critical errors and relatively few major errors
         critical_errors = random.choices(
             [0, 1, 2],
             weights=[0.9, 0.09, 0.01]
         )[0]
 
-        major_errors = random.randint(0, 5)
+        major_errors = random.choices(
+            [0, 1, 2, 3, 4, 5],
+            weights=[0.35, 0.30, 0.18, 0.10, 0.05, 0.02]
+        )[0]
 
-        minor_errors = random.randint(0, 15)
+        minor_errors = random.choices(
+            list(range(0, 11)),
+            weights=[
+                0.16,
+                0.16,
+                0.14,
+                0.12,
+                0.10,
+                0.08,
+                0.07,
+                0.06,
+                0.05,
+                0.04,
+                0.02
+            ]
+        )[0]
 
         issues_found = (
             critical_errors
@@ -362,7 +386,7 @@ def generate_qa_results(projects, project_locales):
             + minor_errors
         )
 
-        # Start with a high score and reduce based on issues
+        # Start with a high score and reduce based on issue severity
         qa_score = max(
             70,
             round(
@@ -380,6 +404,13 @@ def generate_qa_results(projects, project_locales):
             2
         )
 
+        # Critical errors automatically fail QA. Otherwise, a score
+        # of 92 or above is considered a pass.
+        passed = (
+            critical_errors == 0
+            and qa_score >= 92
+        )
+
         qa_results.append(
             {
                 "project_id": project_locale["project_id"],
@@ -390,7 +421,7 @@ def generate_qa_results(projects, project_locales):
                 "major_errors": major_errors,
                 "minor_errors": minor_errors,
                 "review_time_hours": review_time_hours,
-                "passed": qa_score >= 95
+                "passed": passed
             }
         )
 
