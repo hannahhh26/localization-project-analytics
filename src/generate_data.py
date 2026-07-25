@@ -138,13 +138,21 @@ def generate_translator_specialisations(translators):
 
 def generate_projects(number_of_projects=2500):
     """
-    Generate localization projects.
+    Generate localization projects with realistic dates and statuses.
+
+    Around 70% of projects are historical and 30% are currently active.
+    Approximately 10% of active projects are overdue.
     """
 
     clients = load_json("clients.json")
     project_types = load_json("project_types.json")
 
     projects = []
+
+    today = fake.date_between(
+        start_date="today",
+        end_date="today"
+    )
 
     for project_id in range(1, number_of_projects + 1):
 
@@ -161,12 +169,75 @@ def generate_projects(number_of_projects=2500):
             project_type["typical_duration_days"]["max"]
         )
 
-        start_date = fake.date_between(
-            start_date="-1y",
-            end_date="today"
-        )
+        # Around 70% of projects are historical.
+        is_historical = random.random() < 0.70
 
-        due_date = start_date + timedelta(days=duration_days)
+        if is_historical:
+
+            start_date = fake.date_between(
+                start_date="-1y",
+                end_date="-30d"
+            )
+
+            due_date = start_date + timedelta(
+                days=duration_days
+            )
+
+            # Historical projects should no longer be active.
+            status = random.choices(
+                [
+                    "Completed",
+                    "Cancelled"
+                ],
+                weights=[
+                    90,
+                    10
+                ]
+            )[0]
+
+        else:
+
+            # Around 10% of active projects are overdue.
+            is_overdue = random.random() < 0.10
+
+            if is_overdue:
+
+                days_overdue = random.randint(1, 14)
+
+                due_date = today - timedelta(
+                    days=days_overdue
+                )
+
+                start_date = due_date - timedelta(
+                    days=duration_days
+                )
+
+            else:
+
+                # Choose how much of the scheduled duration has elapsed.
+                elapsed_days = random.randint(
+                    0,
+                    max(0, duration_days - 1)
+                )
+
+                start_date = today - timedelta(
+                    days=elapsed_days
+                )
+
+                due_date = start_date + timedelta(
+                    days=duration_days
+                )
+
+            status = random.choices(
+                [
+                    "In Translation",
+                    "QA"
+                ],
+                weights=[
+                    70,
+                    30
+                ]
+            )[0]
 
         projects.append(
             {
@@ -177,17 +248,7 @@ def generate_projects(number_of_projects=2500):
                 "word_count": word_count,
                 "start_date": start_date,
                 "due_date": due_date,
-                # Make completed more likely than other statues
-                "status": random.choice(
-                    [
-                        "Completed",
-                        "Completed",
-                        "Completed",
-                        "In Translation",
-                        "QA",
-                        "Cancelled"
-                    ]
-                )
+                "status": status
             }
         )
 
