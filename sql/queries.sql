@@ -61,6 +61,39 @@ SELECT
     MAX(word_count) AS largest_project
 FROM projects;
 
+-- name: average_word_count_by_project_type
+
+SELECT
+    pt.project_type_name AS project_type,
+    ROUND(AVG(p.word_count), 0) AS average_word_count
+FROM projects p
+JOIN project_types pt
+    ON p.project_type_id = pt.project_type_id
+GROUP BY pt.project_type_name
+ORDER BY average_word_count DESC;
+
+-- name: average_target_locales_by_project_type
+
+SELECT
+    pt.project_type_name AS project_type,
+    ROUND(AVG(locale_count), 1) AS average_target_locales
+FROM (
+    SELECT
+        p.project_id,
+        p.project_type_id,
+        COUNT(pl.locale_id) AS locale_count
+    FROM projects p
+    JOIN project_locales pl
+        ON p.project_id = pl.project_id
+    GROUP BY
+        p.project_id,
+        p.project_type_id
+) t
+JOIN project_types pt
+    ON t.project_type_id = pt.project_type_id
+GROUP BY pt.project_type_name
+ORDER BY average_target_locales DESC;
+
 -- Query 7: Average project turnaround time
 -- name: average_project_turnaround
 
@@ -91,6 +124,28 @@ JOIN project_types AS pt
     ON p.project_type_id = pt.project_type_id
 GROUP BY pt.project_type_name
 ORDER BY average_turnaround_days DESC;
+
+-- Average turnaround by client
+-- name: average_turnaround_by_client
+
+SELECT
+    c.client_name AS client,
+    COUNT(p.project_id) AS project_count,
+    ROUND(
+        AVG(
+            julianday(p.due_date) -
+            julianday(p.start_date)
+        ),
+        1
+    ) AS average_turnaround_days
+FROM projects AS p
+JOIN clients AS c
+    ON p.client_id = c.client_id
+GROUP BY
+    c.client_id,
+    c.client_name
+ORDER BY
+    average_turnaround_days DESC;
 
 -- Query 9: Number of projects by project type
 -- name: projects_by_project_type
@@ -205,18 +260,33 @@ WHERE due_date < date('now')
     AND status IN ('In Translation', 'QA');
 
 -- Query 17: Active overdue projects by project type
--- name: overdue_projects_by_project_type
-
+-- name: overdue_rate_by_project_type
 SELECT
     pt.project_type_name AS project_type,
-    COUNT(*) AS overdue_project_count
+    COUNT(*) AS active_project_count,
+    SUM(
+        CASE
+            WHEN DATE(p.due_date) < DATE('now') THEN 1
+            ELSE 0
+        END
+    ) AS overdue_project_count,
+    ROUND(
+        100.0 * SUM(
+            CASE
+                WHEN DATE(p.due_date) < DATE('now') THEN 1
+                ELSE 0
+            END
+        ) / COUNT(*),
+        1
+    ) AS overdue_rate
 FROM projects AS p
 JOIN project_types AS pt
     ON p.project_type_id = pt.project_type_id
-WHERE p.due_date < date('now')
-    AND p.status IN ('In Translation', 'QA')
+WHERE p.status IN ('In Translation', 'QA')
 GROUP BY pt.project_type_name
-ORDER BY overdue_project_count DESC;
+ORDER BY
+    overdue_rate DESC,
+    overdue_project_count DESC;
 
 -- Query 18: Project types with above-average overdue project counts
 -- name: above_average_overdue_project_types
@@ -257,32 +327,34 @@ GROUP BY c.client_name
 ORDER BY overdue_project_count DESC;
 
 -- Query 20: Active overdue rate by client
--- name: client_overdue_rates
+-- name: overdue_rate_by_client
 
 SELECT
-    c.client_name,
+    c.client_name AS client,
     COUNT(*) AS active_project_count,
     SUM(
         CASE
-            WHEN p.due_date < date('now') THEN 1
+            WHEN DATE(p.due_date) < DATE('now') THEN 1
             ELSE 0
         END
     ) AS overdue_project_count,
     ROUND(
-        SUM(
+        100.0 * SUM(
             CASE
-                WHEN p.due_date < date('now') THEN 1
+                WHEN DATE(p.due_date) < DATE('now') THEN 1
                 ELSE 0
             END
-        ) * 100.0 / COUNT(*),
-        2
-    ) AS overdue_percentage
+        ) / COUNT(*),
+        1
+    ) AS overdue_rate
 FROM projects AS p
 JOIN clients AS c
     ON p.client_id = c.client_id
 WHERE p.status IN ('In Translation', 'QA')
 GROUP BY c.client_name
-ORDER BY overdue_percentage DESC;
+ORDER BY
+    overdue_rate DESC,
+    overdue_project_count DESC;
 
 -- ============================================================
 -- SECTION 3 - CLIENT INSIGHTS
@@ -693,6 +765,19 @@ ORDER BY
 -- SECTION 5 - QA INSIGHTS
 -- ============================================================
 
+-- name: average_qa_review_time_by_project_type
+
+SELECT
+    pt.project_type_name AS project_type,
+    ROUND(AVG(q.review_time_hours),2) AS average_review_time_hours
+FROM qa_results q
+JOIN projects p
+    ON q.project_id = p.project_id
+JOIN project_types pt
+    ON p.project_type_id = pt.project_type_id
+GROUP BY pt.project_type_name
+ORDER BY average_review_time_hours DESC;
+
 -- Query 39: QA performance by project type
 -- name: qa_performance_by_project_type
 
@@ -1014,3 +1099,24 @@ GROUP BY
 ORDER BY
     project_month,
     project_count DESC;
+
+-- ============================================================
+-- EXECUTIVE SUMMARY
+-- ============================================================
+
+-- Query 49: Overall QA performance
+-- name: overall_qa_summary
+
+SELECT
+    COUNT(*) AS qa_reviews,
+    ROUND(AVG(qa_score), 2) AS average_qa_score,
+    ROUND(
+        100.0 * SUM(
+            CASE
+                WHEN passed = 1 THEN 1
+                ELSE 0
+            END
+        ) / COUNT(*),
+        2
+    ) AS qa_pass_rate
+FROM qa_results;
