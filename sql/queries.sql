@@ -3,18 +3,21 @@
 -- ============================================================
 
 -- Query 1: Preview project records
+-- name: preview_projects
 
 SELECT *
 FROM projects
 LIMIT 10;
 
 -- Query 2: Total number of projects
+-- name: total_project_count
 
 SELECT
     COUNT(*) AS total_projects
 FROM projects;
 
 -- Query 3: Projects by status
+-- name: projects_by_status
 
 SELECT
     status,
@@ -24,6 +27,7 @@ GROUP BY status
 ORDER BY project_count DESC;
 
 -- Query 4: Project status percentages
+-- name: project_status_summary
 
 SELECT
     status,
@@ -42,12 +46,14 @@ ORDER BY project_count DESC;
 -- ============================================================
 
 -- Query 5: Average project word count
+-- name: average_project_word_count
 
 SELECT
     ROUND(AVG(word_count), 0) AS average_word_count
 FROM projects;
 
 -- Query 6: Minimum, average and maximum project size
+-- name: project_size_summary
 
 SELECT
     MIN(word_count) AS smallest_project,
@@ -56,6 +62,7 @@ SELECT
 FROM projects;
 
 -- Query 7: Average project turnaround time
+-- name: average_project_turnaround
 
 SELECT
     ROUND(
@@ -68,6 +75,7 @@ SELECT
 FROM projects;
 
 -- Query 8: Average turnaround by project type
+-- name: average_turnaround_by_project_type
 
 SELECT
     pt.project_type_name AS project_type,
@@ -85,6 +93,7 @@ GROUP BY pt.project_type_name
 ORDER BY average_turnaround_days DESC;
 
 -- Query 9: Number of projects by project type
+-- name: projects_by_project_type
 
 SELECT
     pt.project_type_name AS project_type,
@@ -96,6 +105,7 @@ GROUP BY pt.project_type_name
 ORDER BY project_count DESC;
 
 -- Query 10: Number of projects by client
+-- name: projects_by_client
 
 SELECT
     c.client_name,
@@ -107,6 +117,7 @@ GROUP BY c.client_name
 ORDER BY project_count DESC;
 
 -- Query 11: Average project size by client
+-- name: average_project_size_by_client
 
 SELECT
     c.client_name,
@@ -121,6 +132,7 @@ GROUP BY c.client_name
 ORDER BY average_word_count DESC;
 
 -- Query 12: Top 10 largest projects
+-- name: largest_projects
 
 SELECT
     project_id,
@@ -132,6 +144,7 @@ ORDER BY word_count DESC
 LIMIT 10;
 
 -- Query 13: Projects with the shortest turnaround time
+-- name: shortest_turnaround_projects
 
 SELECT
     p.project_id,
@@ -145,6 +158,7 @@ ORDER BY turnaround_days ASC
 LIMIT 10;
 
 -- Query 14: Shortest turnaround time by project type
+-- name: shortest_turnaround_by_project_type
 
 SELECT
     pt.project_type_name AS project_type,
@@ -162,6 +176,7 @@ GROUP BY pt.project_type_name
 ORDER BY shortest_turnaround_days DESC;
 
 -- Query 15: Active projects that are overdue
+-- name: active_overdue_projects
 
 SELECT
     p.project_id,
@@ -181,6 +196,7 @@ WHERE p.due_date < date('now')
 ORDER BY days_overdue DESC;
 
 -- Query 16: Count active overdue projects
+-- name: active_overdue_project_count
 
 SELECT
     COUNT(*) AS overdue_project_count
@@ -189,6 +205,7 @@ WHERE due_date < date('now')
     AND status IN ('In Translation', 'QA');
 
 -- Query 17: Active overdue projects by project type
+-- name: overdue_projects_by_project_type
 
 SELECT
     pt.project_type_name AS project_type,
@@ -202,6 +219,7 @@ GROUP BY pt.project_type_name
 ORDER BY overdue_project_count DESC;
 
 -- Query 18: Project types with above-average overdue project counts
+-- name: above_average_overdue_project_types
 
 WITH overdue_by_type AS (
     SELECT
@@ -225,6 +243,7 @@ WHERE overdue_project_count > (
 ORDER BY overdue_project_count DESC;
 
 -- Query 19: Active overdue projects by client
+-- name: overdue_projects_by_client
 
 SELECT
     c.client_name,
@@ -238,6 +257,7 @@ GROUP BY c.client_name
 ORDER BY overdue_project_count DESC;
 
 -- Query 20: Active overdue rate by client
+-- name: client_overdue_rates
 
 SELECT
     c.client_name,
@@ -269,6 +289,7 @@ ORDER BY overdue_percentage DESC;
 -- ============================================================
 
 -- Query 21: Total word volume by client
+-- name: client_word_volume
 
 SELECT
     c.client_name,
@@ -282,6 +303,7 @@ GROUP BY c.client_name
 ORDER BY total_word_count DESC;
 
 -- Query 22: Percentage of total word volume by client
+-- name: client_share_of_word_volume
 
 SELECT
     c.client_name,
@@ -298,6 +320,7 @@ GROUP BY c.client_name
 ORDER BY percentage_of_total_words DESC;
 
 -- Query 23: Project type breakdown by client
+-- name: client_project_type_breakdown
 
 SELECT
     c.client_name,
@@ -316,6 +339,7 @@ ORDER BY
     project_count DESC;
 
 -- Query 24: Most common project type for each client
+-- name: most_common_project_type_by_client
 
 WITH client_project_types AS (
     SELECT
@@ -355,6 +379,7 @@ ORDER BY project_count DESC;
 -- ============================================================
 
 -- Query 25: Projects completed by each translator
+-- name: completed_projects_by_translator
 
 SELECT
     t.translator_name,
@@ -373,6 +398,7 @@ GROUP BY
 ORDER BY projects_completed DESC;
 
 -- Query 26: Total words translated by each translator
+-- name: translator_word_volume
 
 SELECT
     t.translator_name,
@@ -391,6 +417,7 @@ GROUP BY
 ORDER BY total_words_translated DESC;
 
 -- Query 27: Average project size per translator
+-- name: average_project_size_by_translator
 
 SELECT
     t.translator_name,
@@ -412,6 +439,7 @@ GROUP BY
 ORDER BY average_project_size DESC;
 
 -- Query 28: Most experienced translators
+-- name: most_experienced_translators
 
 SELECT
     translator_name,
@@ -420,6 +448,7 @@ FROM translators
 ORDER BY years_experience DESC;
 
 -- Query 29: Average QA score by translator
+-- name: translator_qa_performance
 
 SELECT
     t.translator_name,
@@ -441,6 +470,7 @@ GROUP BY
 ORDER BY average_qa_score DESC;
 
 -- Query 30: Highest average QA score, minimum 10 reviews
+-- name: highest_translator_qa_scores
 
 SELECT
     t.translator_name,
@@ -463,6 +493,7 @@ HAVING COUNT(*) >= 10
 ORDER BY average_qa_score DESC;
 
 -- Query 31: Translators with no project assignments
+-- name: unassigned_translators
 
 SELECT
     t.translator_id,
@@ -478,6 +509,7 @@ ORDER BY
     t.translator_name;
 
 -- Query 32: Translator coverage by locale
+-- name: translator_coverage_by_locale
 
 SELECT
     l.locale_code,
@@ -495,6 +527,7 @@ GROUP BY
 ORDER BY translator_count DESC;
 
 -- Query 33: Five locales with the most translators
+-- name: locales_with_most_translators
 
 SELECT
     l.locale_code,
@@ -513,6 +546,7 @@ ORDER BY translator_count DESC
 LIMIT 5;
 
 -- Query 34: Five locales with the fewest translators
+-- name: locales_with_fewest_translators
 
 SELECT
     l.locale_code,
@@ -531,6 +565,7 @@ ORDER BY translator_count ASC
 LIMIT 5;
 
 -- Query 35: Project demand by target locale
+-- name: project_demand_by_locale
 
 SELECT
     l.locale_code,
@@ -547,6 +582,7 @@ GROUP BY
     l.region
     
 -- Query 36: Total word volume by target locale
+-- name: word_volume_by_locale
 
 SELECT
     l.locale_code,
@@ -567,6 +603,7 @@ GROUP BY
 ORDER BY total_word_volume DESC;
 
 -- Query 37: Translator supply compared with project demand
+-- name: locale_supply_and_demand
 
 WITH translator_supply AS (
     SELECT
@@ -607,6 +644,7 @@ LEFT JOIN locale_demand AS ld
 ORDER BY projects_per_translator DESC;
 
 -- Query 38: Locales with high project demand per translator
+-- name: high_demand_low_supply_locales
 
 WITH translator_supply AS (
     SELECT
@@ -652,10 +690,11 @@ ORDER BY
     total_word_volume DESC;
 
 -- ============================================================
--- SECTION 4 - QA INSIGHTS
+-- SECTION 5 - QA INSIGHTS
 -- ============================================================
 
 -- Query 39: QA performance by project type
+-- name: qa_performance_by_project_type
 
 SELECT
     pt.project_type_name,
@@ -687,6 +726,7 @@ GROUP BY
 ORDER BY pass_rate_percentage ASC;
 
 -- Query 40: QA pass rate by client
+-- name: qa_failure_rate_by_client
 
 SELECT
     c.client_name,
@@ -720,6 +760,7 @@ ORDER BY
     qa_reviews DESC;
 
 -- Query 41: QA issue severity breakdown
+-- name: qa_issue_severity
 
 SELECT
     SUM(critical_errors) AS total_critical_errors,
@@ -744,6 +785,7 @@ SELECT
 FROM qa_results;
 
 -- Query 42: Detailed failed QA results
+-- name: failed_qa_results
 
 SELECT
     q.project_id,
@@ -772,6 +814,7 @@ ORDER BY
     q.qa_score ASC;
 
 -- Query 43: Lowest average QA score by translator (Min 10 reviewed assignments)
+-- name: lowest_translator_qa_scores
 
 SELECT
     t.translator_name,
@@ -797,6 +840,7 @@ HAVING COUNT(*) >= 10
 ORDER BY average_qa_score ASC;
 
 -- Query 44: QA failure rate by translator
+-- name: translator_qa_failure_rates
 
 SELECT
     t.translator_name,
@@ -832,6 +876,7 @@ ORDER BY
     reviewed_assignments DESC;
 
 -- Query 45: High-volume, high-quality translators
+-- name: high_volume_high_quality_translators
 
 SELECT
     t.translator_name,
@@ -867,6 +912,7 @@ ORDER BY
     total_words_translated DESC;
 
 -- Query 46: Top three translators per language
+-- name: top_translators_by_language
 -- Based on average QA score, with at least 5 reviewed assignments
 -- in that language
 
@@ -941,7 +987,8 @@ ORDER BY
     language,
     language_rank;
 
--- Query 48: Monthly project volume trends
+-- Query 47: Monthly project volume trends
+-- name: monthly_project_volume
 
 SELECT
     STRFTIME('%Y-%m', start_date) AS project_month,
@@ -952,7 +999,8 @@ FROM projects
 GROUP BY STRFTIME('%Y-%m', start_date)
 ORDER BY project_month;
 
--- Query 49: Monthly project trends by status
+-- Query 48: Monthly project trends by status
+-- name: monthly_project_status_trends
 
 SELECT
     STRFTIME('%Y-%m', start_date) AS project_month,
