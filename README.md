@@ -44,7 +44,7 @@ The analysis focuses on answering questions such as:
 
 ## Database Schema
 
-![ER Diagram](images\er_diagram.png)
+![ER Diagram](images/er_diagram.png)
 
 The database is normalised to reduce data duplication and models clients, projects, translators, locales, project assignments, and QA results using primary and foreign key relationships.
 
@@ -54,7 +54,7 @@ The database is normalised to reduce data duplication and models clients, projec
 
 ### Average Turnaround by Project Type
 
-![Average Turnaround by Project Type](images\avg_turnaround_project_type.png)
+![Average Turnaround by Project Type](images/avg_turnaround_project_type.png)
 
 Documentation projects have the longest average turnaround time, while subtitle projects are completed the quickest.
 
@@ -62,7 +62,7 @@ Documentation projects have the longest average turnaround time, while subtitle 
 
 ### Project Type Distribution of Top Clients
 
-![Project Type Distribution by Client](images\project_type_distribution_of_top_clients.png)
+![Project Type Distribution by Client](images/project_type_distribution_of_top_clients.png)
 
 Comparing project type distribution across the highest-volume clients highlights differences in the mix of localisation work requested by each client.
 
@@ -70,7 +70,7 @@ Comparing project type distribution across the highest-volume clients highlights
 
 ### Top 10 High-Volume Translators by QA Pass Rate
 
-![High-Volume Translators by QA Pass Rate](images\high_volume_high_quality_translators.png)
+![High-Volume Translators by QA Pass Rate](images/high_volume_high_quality_translators.png)
 
 This analysis highlights translators who combine high output with strong QA performance, helping identify reliable contributors who deliver quality work at scale.
 
